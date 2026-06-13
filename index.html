@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Resume Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Phoenix Resume Tracker</h1>
+  <p>Daily Work Documentation • Portfolio • Resume Generator</p>
+</header>
+
+<section class="profile">
+  <h2>Profile Details</h2>
+  <input id="name" placeholder="Full Name">
+  <input id="contact" placeholder="Contact Details">
+  <input id="education" placeholder="Education">
+  <input id="role" placeholder="Leadership Role">
+  <button onclick="saveProfile()">Save Profile</button>
+</section>
+
+<section>
+  <h2>Daily Task Form</h2>
+  <input id="date" type="date">
+  <input id="task" placeholder="Today's Task">
+  <input id="project" placeholder="Project Name">
+  <input id="skills" placeholder="Skills Used">
+  <input id="tools" placeholder="Tools Used">
+  <input id="prompt" placeholder="AI Prompt Used">
+  <input id="website" placeholder="Website/Product Created">
+  <input id="client" placeholder="Client/Project Experience">
+  <input id="achievement" placeholder="Achievement">
+  <button onclick="addTask()">Add Work Record</button>
+</section>
+
+<section class="stats">
+  <div><h3 id="taskCount">0</h3><p>Total Tasks</p></div>
+  <div><h3 id="projectCount">0</h3><p>Projects</p></div>
+  <div><h3 id="skillCount">0</h3><p>Skills</p></div>
+  <div><h3 id="achievementCount">0</h3><p>Achievements</p></div>
+</section>
+
+<section>
+  <h2>Daily Work Records</h2>
+  <div id="records"></div>
+</section>
+
+<section>
+  <h2>Portfolio Section</h2>
+  <div id="portfolio"></div>
+</section>
+
+<section>
+  <h2>Auto Resume Preview</h2>
+  <div id="resumePreview"></div>
+  <button onclick="generatePDF()">Download PDF Resume</button>
+  <button onclick="clearAll()">Clear All Data</button>
+</section>
+
+<footer>
+  <p>Created for AI Intern Squad | Phoenix Squad</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+    </html>
